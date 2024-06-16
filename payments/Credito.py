@@ -6,7 +6,7 @@ class Credito:
         pass
 
     def update_limite(self, movimentacao):
-        self.limite = self.limite - movimentacao
+        self.limite -= movimentacao
 
     def show(self):
         return {
