@@ -1,5 +1,8 @@
+from payments.Credito import Credito
+from datetime import datetime
+
 class Movimento:
-    def __init__(self, side, valor, desc, payment, data) -> None:
+    def __init__(self, side:str, valor:float, desc:str, payment:any, data:datetime) -> None:
         self.side = side
         self.valor = valor
         self.desc = desc
